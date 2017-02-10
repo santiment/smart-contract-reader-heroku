@@ -8,9 +8,9 @@
 
 ## Setup
 - `$ cd <parent_directory>`
-- Put `credentials.js` file here
 - `$ git clone https://github.com/santiment/smart-contract-reader-heroku.git`
 - `$ cd smart-contract-reader-heroku`
+- Put `.env` file here
 - `$ npm install`
 - `$ gem install foreman`
 - `$ heroku login`
@@ -20,9 +20,16 @@
 - Make changes to the code
 - `$ git add .`
 - `$ git commit -m "<Commit name>"`
+
+Test locally
+- `$ heroku local`
+- Navigate to `localhost:5000` in the browser
+
+Deploy to heroku
 - `$ git push heroku master`
 - `$ heroku open`
 
 ## Scaling dynos
 - `$ cd <project_dir>`
 - `$ heroku ps:scale web=X` where X is a number of dynos
+- `$ heroku ps` - Check current status
