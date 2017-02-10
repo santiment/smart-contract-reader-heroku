@@ -7,7 +7,7 @@
 - [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
 
 ## Setup
-- `cd <parent_directory>`
+- `$ cd <parent_directory>`
 - Put `credentials.js` file here
 - `$ git clone https://github.com/santiment/smart-contract-reader-heroku.git`
 - `$ cd smart-contract-reader-heroku`

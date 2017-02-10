@@ -7,7 +7,7 @@ const express = require('express');
 
 const app = express();
 
-const credentials = require('../credentials');
+const credentials = require('./credentials');
 
 app.get('/', (req, res) => {
     console.log(credentials);
