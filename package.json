@@ -1,0 +1,16 @@
+{
+  "name": "smart-contract-reader",
+  "version": "0.0.1",
+  "description": "test",
+  "engines": {
+    "node": "6.9.4"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "express": "^4.14.1",
+    "lodash": "^4.17.4",
+    "web3": "^0.18.2"
+  },
+  "author": "Eugene Tartakovsky",
+  "license": "MIT"
+}
