@@ -33,3 +33,10 @@ Deploy to heroku
 - `$ cd <project_dir>`
 - `$ heroku ps:scale web=X` where X is a number of dynos
 - `$ heroku ps` - Check current status
+
+## Changing contract or API keys
+For local testing:
+- Edit `.env` file
+
+For deployment
+- Edit env vars in the [dashboard](https://dashboard.heroku.com/apps/santiment-contract/settings)
