@@ -7,9 +7,13 @@ const express = require('express');
 
 const app = express();
 
-const credentials = require('./credentials');
-
 app.get('/', (req, res) => {
+    const credentials = {
+        apiKey: process.env.ETHERSCAN_API_KEY,
+        contractAddress: process.env.CONTRACT_ADDRESS,
+        infuraToken: process.env.INFURA_TOKEN
+    };
+
     console.log(credentials);
 
     const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/' + credentials.infuraToken));
