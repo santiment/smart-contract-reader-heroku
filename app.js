@@ -53,6 +53,8 @@ app.get('/', (req, res) => {
                 };
 
                 console.log('result: ' + JSON.stringify(result, null, 2));
+                res.header("Access-Control-Allow-Origin", "*");
+                res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
                 res.send(result);
             }
             else {
